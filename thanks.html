@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <link rel="stylesheet" href=".//CSS/reset.css" />
+    <link rel="stylesheet" href=".//CSS/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+
+
+<body>
+
+    <header id="header">
+        <div class="header-inner">
+            <h1 class="name-logo">
+                <a href="./index.html"><img src="./images/name@2x.png" alt="名前ロゴ"></a>
+            </h1>
+            <nav class="gnav_pc">
+                <ul>
+                    <li><a href="./index.html">all</a></li>
+                    <li><a href="./profile.html">profile</a></li>
+                    <li><a href="./web.html">web</a></li>
+                    <li><a href="./graphic.html">graphic</a></li>
+                    <li><a href="./other.html">other</a></li>
+                    <li><a href="./contact.html">contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- ハンバーガーメニュー -->
+        <div class="hamburger">
+            <span></span>
+        </div>
+        <nav class="gnav-sp">
+            <ul class="gnav-sp-list">
+                <li><a href="./index.html">all</a></li>
+                <li><a href="./profile.html">profile</a></li>
+                <li><a href="./web.html">web</a></li>
+                <li><a href="./graphic.html">graphic</a></li>
+                <li><a href="./other.html">other</a></li>
+                <li><a href="./contact.html">contact</a></li>
+                <li><img src="images/hamburger_2.png" alt="ハンバーガー開いた時" /></li>
+            </ul>
+    </header>
+
+    <main>
+        <section id="profile_logo">
+            <div class="plofile_block">
+                <img src="./images/contact@2x.png" alt="contact ロゴ">
+            </div>
+        </section>
+    </main>
+
+    <div id="thanks">
+        <img src="./images/thanks4@2x.png" alt="thanksロゴ">
+        <p>ご連絡ありがとうございます！<br>メッセージは送信されました。</p>
+        <div class="thanks_logo"><img src="images/logo@2x.png" alt="ロゴ"></div>
+
+    </div>
+
+    <div class="thanks_btn"> <a href="./index.html" onclick="history.back()">TOPへ戻る</a></div>
+
+
+    <footer>
+        <p class="copyright">&copy;2025 satsuki wakai</p>
+    </footer>
+
+    <script>
+        //ハンバーガーメニュー
+        $(function () {
+            $(".hamburger").click(function () {
+                $(".hamburger").toggleClass("open");
+                $(".gnav-sp").fadeToggle();
+            });
+
+
+            //スライダー
+            $(".main-visual").slick({
+                //手動切り替えのボタンを消す
+                arrows: false,
+                // 3秒ごとに切り替わる
+                autoplay: true,
+                autoplaySpeed: 3000,
+                //・・・を出す
+                dots: true,
+            });
+
+
+            //スライダー
+            $(".carousel").slick({
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 3000,
+            });
+        });
+
+        $(".carousel").slick({
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            responsive: [{
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 1
+                }
+            }]
+        });
+    </script>
+</body>
+
+</html>

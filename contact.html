@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>contact</title>
+  <link rel="stylesheet" href=".//CSS/reset.css" />
+  <link rel="stylesheet" href=".//CSS/style.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="./js/script.js"></script>
+</head>
+
+<body>
+  <header id="header">
+    <div class="header-inner">
+      <h1 class="name-logo">
+        <a href="./index.html"><img src="./images/name@2x.png" alt="名前ロゴ" /></a>
+      </h1>
+      <nav class="gnav_pc">
+        <ul>
+          <li><a href="./index.html">all</a></li>
+          <li><a href="./profile.html">profile</a></li>
+          <li><a href="./web.html">web</a></li>
+          <li><a href="./graphic.html">graphic</a></li>
+          <li><a href="./other.html">other</a></li>
+          <li><a href="./contact.html">contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <!-- ハンバーガーメニュー -->
+    <div class="hamburger">
+      <span></span>
+    </div>
+    <nav class="gnav-sp">
+      <ul class="gnav-sp-list">
+        <li><a href="./index.html">all</a></li>
+        <li><a href="./profile.html">profile</a></li>
+        <li><a href="./web.html">web</a></li>
+        <li><a href="./graphic.html">graphic</a></li>
+        <li><a href="./other.html">other</a></li>
+        <li><a href="./contact.html">contact</a></li>
+        <li><img src="images/hamburger_2.png" alt="ハンバーガー開いた時" /></li>
+      </ul>
+
+    </nav>
+  </header>
+
+  <main>
+    <section id="contact_logo">
+      <div class="plofile_block">
+        <img src="./images/contact@2x.png" alt="contact ロゴ" />
+      </div>
+    </section>
+  </main>
+
+  <div class="contact_text">
+    <p>
+      本サイトをご覧いただきありがとうございます。<br class="br_contact" />
+      お仕事のご依頼やご相談、外部パートナーシップのご提案など、<br class="br_contact" />下記のフォームよりお気軽にご連絡ください。<br />
+      通常、土日祝を除く1〜3営業日以内にご返信いたします。
+    </p>
+  </div>
+
+  <form
+    action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeGOtSudCM3qvXgXoC6uddQn0eOYZewTsFUYyiv4Y-aEQTNBw/formResponse"
+    method="POST" target="hidden_iframe" onsubmit="submitted=true;" class="c-form">
+    <div class="c-form__item">
+      <label class="c-form__label" for="field-name">お名前</label>
+      <input name="entry.570576751" class="c-form__input" id="field-name" placeholder="山田 太郎" type="text"
+        required="required" />
+    </div>
+    <div class="c-form__item">
+      <label class="c-form__label" for="field-jobname">会社名</label>
+      <input name="entry.2052217438" class="c-form__input" id="field-jobname" placeholder="株式会社MARUMARU" type="text"
+        required="required" />
+    </div>
+    <div class="c-form__item">
+      <label class="c-form__label" for="field-mailadress">メールアドレス</label>
+      <input name="entry.537445439" class="c-form__input" id="field-mail" placeholder="sample@gmail.com" type="text"
+        required="required" />
+    </div>
+    <div class="c-form__item">
+      <label class="c-form__label" for="field-message">お問い合わせ内容</label>
+      <textarea name="entry.1995030121" class="c-form__input" id="field-message"
+        placeholder="お問い合わせ内容をご記入ください"></textarea>
+    </div>
+    <div class="c-form__submit">
+      <button type="submit">送信</button>
+    </div>
+  </form>
+  <script type="text/javascript">
+    let submitted = false;
+  </script>
+  <iframe name="hidden_iframe" id="hidden_iframe" style="display: none"
+    onload="if(submitted){window.location='./thanks.html';}"></iframe>
+  <footer>
+    <p class="copyright">&copy;2025 satsuki wakai</p>
+  </footer>
+</body>
+
+</html>
